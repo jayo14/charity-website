@@ -1,0 +1,10 @@
+:root {
+    --primary-color: green;
+    --secondary-color: blue;
+
+    --button-color: yellow;
+}
+
+body {
+    width: 100%;
+}
