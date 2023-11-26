@@ -1,10 +1,248 @@
 :root {
-    --primary-color: green;
-    --secondary-color: blue;
-
-    --button-color: yellow;
+    --color_1: rgba(27,42,87,1);
+    --color_2: rgba(255,255,255,1);
+    --color_3: rgba(240,112,86,1);
+    --color_4: rgba(255,251,244,1);
+    --color_5: rgba(243,228,217,1);
+    --color_6: rgba(213,218,231,1);
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 
 body {
     width: 100%;
+}
+
+.home {
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background: var(--color_4);
+    padding-top: 10px;
+
+}
+
+.logo {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+nav {
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+nav ul li {
+    list-style-type: none;
+    width: 100px;
+    margin-left: 30px;
+    font-size: 14px;
+    font-family: Mulish, sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color_1);
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+header button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--color_3);
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: var(--color_2);
+    margin-left: -20px;
+    font-family: Mulish, sans-serif;
+}
+
+header button:hover {
+    background: var(--color_1);
+}
+
+
+/* Landing-page */
+.landing-page {
+    height: 100vh;  
+    padding-top: 5%;  
+}
+
+.landing-text {
+    width: 60%;
+    margin-left: 10%;
+    color: var(--color_4);
+}
+
+.landing-page h1 {
+    font-size: 60px;
+    line-height: 1.4;
+    font-family: Comfortaa, serif;
+}
+
+.landing-page p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Mulish, sans-serif;
+    margin-bottom: 40px;
+}
+
+.support-butt {
+    width: 150px;
+    height: 50px;
+    background-color: var(--color_3);
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: var(--color_2);
+    font-family: Mulish, sans-serif;
+}
+
+.support-butt:hover {
+    background: var(--color_1);
+}
+
+
+/* About Us */
+#about-us {
+    height: 50vh;
+    background-color: var(--color_4);
+    margin-top: -15px;
+    padding-top: 40px;
+}
+
+#about-us p {
+    text-align: center;
+    padding: 40px 13.5em;
+    font-family: Mulish, sans-serif;
+    line-height: 2;
+    color: var(--color_1);
+}
+
+.duo-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 30em;
+    color: var(--color_1);
+    font-family: Mulish, sans-serif;
+}
+
+.duo-button {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: var(--color_2);
+    width: 180px;
+    height: 50px;
+    border: transparent;
+    transition: 0.4s ease-out;
+    padding: 10px 20px;
+    font-family: Mulish, sans-serif;
+}
+
+.one {
+    border: 2px solid var(--color_1);
+    margin-right: 10px;
+    color: var(--color_1);
+    background: transparent;
+}
+
+.one:hover {
+    background-color: var(--color_1);
+    color: var(--color_4)
+}
+
+
+.two {
+    background-color: var(--color_1);
+    margin-left: 10px;
+    border: 2px solid var(--color_1);
+}
+
+.two:hover {
+    border: 2px solid var(--color_1);
+    color: var(--color_1);
+    background: transparent;
+}
+
+/* Impact Statistics */
+
+#statistics {
+    height: 80vh;
+    background-color: var(--color_4);
+    padding-top: 1.1in;
+}
+
+#statistics h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Comfortaa, serif;
+    color: var(--color_1)
+}
+
+.impact-grid {
+    display: flex;
+    margin-left: 5%;
+    width: 80%;
+}
+
+.impact {
+    width: 30%;
+    padding: 20px 30px;
+}
+
+.impact h1 {
+    text-align: center;
+    color: var(--color_3);
+    font-size: 50px;
+    font-family: Comfortaa, serif;
+    margin-left: -30px;
+}
+
+.impact p {
+    width: 2.7in;
+    font-family: Mulish, sans-serif;
+    color: var(--color_1);
+    text-align: center;
+    line-height: 1.6;
+    padding: 0px 5px;
+    margin-top: -20px
+}
+
+/* Care and Therapy */
+#care {
+    height: 150vh;
+    background-color: var(--color_5);
+    padding-top: 50px;
+}
+
+#care h2 {
+    font-family: Comfortaa, sans-serif;
+    color: var(--color_1);
+    text-align: center;
 }
